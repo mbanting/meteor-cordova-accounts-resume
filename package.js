@@ -13,7 +13,7 @@ Cordova.depends({
 
 Package.onUse(function(api) {
   api.versionsFrom("1.0.1");
-  api.use(["meteor", "jquery", "accounts-base"]);
+  api.use(["meteor", "accounts-base"]);
   api.use(["skinnygeek1010:cordova-status@0.2.0"], 'web.cordova');
 
 
@@ -22,8 +22,6 @@ Package.onUse(function(api) {
       "lib/client/deviceStorageService.js",
       "lib/client/index.js"
       ], ["web.cordova"]);
-
-  api.export("log");
 
 });
 
