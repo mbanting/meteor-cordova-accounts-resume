@@ -16,22 +16,9 @@ Package.onUse(function(api) {
   api.use(["meteor", "accounts-base"]);
   api.use(["skinnygeek1010:cordova-status@0.2.0"], 'web.cordova');
 
-
-
   api.addFiles([
       "lib/client/deviceStorageService.js",
       "lib/client/index.js"
       ], ["web.cordova"]);
 
 });
-
-
-Package.onTest(function (api) {
-  api.use("tinytest");
-  api.use("mbanting:cordova-accounts-resume");
-  
-  api.addFiles("tests/client/index.js", ["client"]);
-
-});    
-  
-  
