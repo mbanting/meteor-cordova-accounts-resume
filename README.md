@@ -1,6 +1,6 @@
 # mbanting:cordova-accounts-resume
 
-Ensures user sessions are resumed successfully on Meteor Cordova apps. 
+Ensures users stay authenticated on a Meteor Cordova app, even if the user switches apps or the device shuts down. 
 
 ## Installation
 
@@ -10,11 +10,11 @@ Ensures user sessions are resumed successfully on Meteor Cordova apps.
 
 ## Description
 
-Unlike web applications that can be viewed from shared desktops and laptops, mobile users have come to expect that once they log in on an app, they stay authenticated even if the user switches to another app, or their phone or tablet shuts off. If the user resumes the app, they shouldn't have to log in again.
+Unlike web applications that can be viewed from shared desktops and laptops, mobile users expect to stay authenticated even if they switche to another app, or their phone or tablet shuts off. If the user resumes the app, they shouldn't have to log in again.
 
 If you're using one of Meteor's excellent [Accounts](https://www.meteor.com/accounts) packages to handle user authentication, you may notice that when deployed and running on a mobile device via Cordova, the user's session eventually invalidates on a subsequent app resume, forcing the user to log in once again. This is because Meteor Accounts [stores the login token in localStorage](https://github.com/meteor/meteor/blob/master/packages/accounts-base/localstorage_token.js#L43). When an app goes to sleep, iOS and Android will periodically clear localStorage to free up memory.
 
-This package resolves this issue by supplementing Meteor's account functionality, backing up the login token to the device's local file storage. When the app resumes, if localStorage was cleared (and thus no current user is authenticated), this package will check if the loginToken exists in file storage. If so, it will attempt to re-authenticate with this loginToken, resuming the user session if successful.
+This package resolves this issue by supplementing Meteor's account functionality, backing up the login token to the device's local file system. When the app resumes, if localStorage was cleared (and thus no current user is authenticated), this package will check if the loginToken exists in file storage. If so, it will attempt to re-authenticate with this loginToken, resuming the user session if successful.
 
 ## Usage
 
