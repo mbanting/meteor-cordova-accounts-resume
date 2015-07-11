@@ -30,5 +30,13 @@ App.configurePlugin('org.apache.cordova.file', {
 ```
 See the plugin's [documentation](https://github.com/apache/cordova-plugin-file#ios-persistent-storage-location) for more details.
 
+## Testing
+
+To run this package's tests, it must be done on a mobile environment since this is a Meteor Cordova package. To do so, pass the flag to indicate which mobile environment to run in. For example:
+
+```
+meteor test-packages --ios-device ./
+```
+
 ## Feedback
 I've successfully used this package in two Meteor Cordova applications. Hopefully this helps you in your next app. If you have any problems, questions, or have general feedback, please feel free to contact me!
