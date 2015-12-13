@@ -24,7 +24,7 @@ This package is meant to be as unobtrusive as possible. Simply add the package a
 This package uses the [org.apache.cordova.file](https://github.com/apache/cordova-plugin-file) plugin to store the login token on the device's filesystem. If supporting iOS, you may need to configure storage from the default `Compatibility` value to `Library`. If your application is new, or has never previously stored files in the persistent filesystem, then the `Library` setting is generally recommended. To do this add this to your Meteor app's [mobile configuration file](http://docs.meteor.com/#/full/mobileconfigjs):
 ```
 // Configure cordova file plugin
-App.configurePlugin('org.apache.cordova.file', {
+App.configurePlugin('cordova-plugin-file', {
     iosPersistentFileLocation: 'Library'
 });
 ```
