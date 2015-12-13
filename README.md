@@ -2,6 +2,10 @@
 
 Ensures users stay authenticated on a Meteor Cordova app, even if the user switches apps or the device shuts down. 
 
+## Prerequisites
+
+This version requires Meteor 1.2+ due to its use of NPM to pull in Cordova plugins. If using a prior Meteor version, use version 0.9.2 of this package.
+
 ## Installation
 
 ```

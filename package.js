@@ -4,7 +4,7 @@
 Package.describe({
     name: "mbanting:cordova-accounts-resume",
     summary: "Ensures user sessions are resumed successfully on Meteor Cordova apps.",
-    version: "0.9.1",
+    version: "1.0.0",
     git: "https://github.com/mbanting/meteor-cordova-accounts-resume"
 });
 
@@ -12,7 +12,7 @@ Package.describe({
  * Cordova plugin dependencies
  */
 Cordova.depends({
-    'org.apache.cordova.file': '1.3.3'
+    'cordova-plugin-file': '3.0.0'
 });
 
 /**
