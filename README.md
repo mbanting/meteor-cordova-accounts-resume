@@ -40,7 +40,7 @@ To run this package's tests, it must be done on a mobile environment since this 
  Cordova apps. To do so, pass the flag to indicate which mobile environment to run in. For example:
 
 ```
-meteor test-packages --ios-device ./
+meteor test-packages --ios-device ./ --release 1.2.1
 ```
 
 ## Feedback
