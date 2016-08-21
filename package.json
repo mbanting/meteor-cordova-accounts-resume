@@ -1,0 +1,24 @@
+{
+  "name": "meteor-cordova-accounts-resume",
+  "version": "1.1.0",
+  "description": "Ensures users stay authenticated on a Meteor Cordova app, even if the user switches apps or the device shuts down.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "meteor test-packages --ios-device ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbanting/meteor-cordova-accounts-resume.git"
+  },
+  "author": "mbanting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbanting/meteor-cordova-accounts-resume/issues"
+  },
+  "homepage": "https://github.com/mbanting/meteor-cordova-accounts-resume#readme"
+}
